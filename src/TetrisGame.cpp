@@ -106,6 +106,7 @@ void TetrisGame::gameOverUpdate()
 	{
 		beginStop = true;
 		isGameOver = false;
+		score = 0;
 
 		clearAllLines();
 		setRandomTetrimino();
