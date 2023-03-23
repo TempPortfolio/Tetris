@@ -10,11 +10,11 @@ Voici les contrôles :
 | "q" et "d" | permet le déplacement à gauche et à droite |
 | "s" | accélère la chute d'une pièce (fait gagner des points) |
 
-A chaque fin de partie le jeu ce relance après 5 seconds.
+A chaque fin de partie le jeu se relance après 5 secondes.
 
 ![](doc/demo.gif)
 
 ## Fonctionnement
 
 Le jeu a été fait en C++ avec la bibliothèque [SFML](https://www.sfml-dev.org/).
-Le code a été compilé et crée sur Windows 10 avec MinGW-W64 8.
+Le code a été compilé et créé sur Windows 10 avec MinGW-W64 8.
