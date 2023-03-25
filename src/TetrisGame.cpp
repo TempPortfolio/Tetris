@@ -17,14 +17,6 @@ TetrisGame::TetrisGame()
 
 void TetrisGame::update()
 {
-	//in left right -> key down and released
-	//in fast down -> key down and released
-	//in rotation -> key down
-
-	//fall
-	//if stop falling
-		//random tetrimino at middle
-
 	if (isGameOver)
 	{
 		gameOverUpdate();
@@ -41,11 +33,9 @@ void TetrisGame::update()
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
 			tryRotate(false);
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-			if (tryFall()) {
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+			if (tryFall())
 				addScore(SCORE_DOWN);
-			}
-		}
 
 		Vector2 toAdd;
 
@@ -237,8 +227,7 @@ void TetrisGame::draw(sf::RenderWindow* window)
 
 			drawBlock(window, (float)x, (float)y, b);
 		}
-
-	//draw score
+	
 	sf::Text text;
 	text.setFont(font);
 	text.setString(std::string("Score: ") + std::to_string(score));
